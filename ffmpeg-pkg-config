@@ -1,9 +1,19 @@
 #!/bin/bash
 pkg_name=${@: -1}
 
-SCRIPT=$(readlink -f "$0")
+SCRIPT=$(greadlink -f "$0")
 BASEDIR=$(dirname "$SCRIPT")
 export PKG_CONFIG_PATH=${BASEDIR}/toolchain-android/lib/pkgconfig
+
+echo BASEDIR ${BASEDIR}
+echo PKG_CONFIG_PATH ${PKG_CONFIG_PATH}
+
+echo ${PKG_CONFIG_PATH}
+echo ##################
+echo ##################
+echo ##################
+echo ##################
+
 case $1 in
   --exists)
     pkg-config --exists $pkg_name

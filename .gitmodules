@@ -13,3 +13,9 @@
 [submodule "fontconfig"]
 	path = fontconfig
 	url = git://anongit.freedesktop.org/fontconfig
+[submodule "x265"]
+	path = x265
+	url = https://github.com/videolan/x265.git
+[submodule "libexpat"]
+	path = libexpat
+	url = https://github.com/libexpat/libexpat

@@ -7,6 +7,9 @@ pushd x264
 make clean
 
 case $1 in
+  arm64-v8a)
+    HOST=aarch64-linux
+  ;;
   armeabi-v7a | armeabi-v7a-neon)
     HOST=arm-linux
   ;;
